@@ -1,16 +1,9 @@
-{
-  "language": "python",
-  "os": [
-    "linux"
-  ],
-  "dist": "xenial",
-  "python": [
-    "3.8"
-  ],
-  "install": [
-    "pip install -r requirements.txt"
-  ],
-  "script": [
-    "python -m pytest"
-  ]
-}
+language: python
+python: 3.10.5
+
+install:
+  - pip install -r requirements.txt
+
+script:
+  - python -m pytest
+
